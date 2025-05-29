@@ -149,7 +149,6 @@ export default function AboutPage() {
                       'GitHub',
                       'VS Code',
                       'Chrome DevTools',
-                      'npm',
                       'Figma'
                     ].map((skill) => (
                       <span key={skill} className='px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm'>

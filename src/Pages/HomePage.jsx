@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Header from '../Shared/Header'
 import Picture from '../assets/Images/Picture2.png'
 import VC from '../assets/VC/Bretaña, Jhonn Michael B CV.pdf'  // Import your VC file
 
 export default function HomePage() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [typedName, setTypedName] = useState('');
+  const nameText = 'Jhonn Michael Bretaña';
+  const nameChars = [...nameText];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +17,22 @@ export default function HomePage() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setTypedName('');
+    let interval = null;
+    interval = setInterval(() => {
+      setTypedName((prev) => {
+        if (prev.length < nameChars.length) {
+          return prev + nameChars[prev.length];
+        } else {
+          clearInterval(interval);
+          return prev;
+        }
+      });
+    }, 80);
+    return () => clearInterval(interval);
   }, []);
 
   const downloadVC = () => {
@@ -38,8 +57,9 @@ export default function HomePage() {
         {/* Text Content */}
         <div className='space-y-6 z-10 md:w-1/2 text-left'>
           <h3 className='text-xl font-semibold text-gray-600 animate-fadeIn'>Hello, I'm</h3>
-          <h1 className='text-6xl md:text-6xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent animate-slideUp'>
-            Jhonn Michael Bretaña
+          <h1 className='text-6xl md:text-6xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent animate-slideUp min-h-[2.5rem]'>
+            {typedName}
+            <span className={`border-r-2 border-purple-400 ml-1 ${typedName.length === nameChars.length ? 'animate-pulse' : ''}`}></span>
           </h1>
           <h2 className='text-4xl md:text-4xl text-gray-800 animate-slideUp delay-200'>
             Aspring Front-End Web Developer
@@ -53,7 +73,7 @@ export default function HomePage() {
         <div className={`relative md:w-1/2 mt-10 md:mt-0 transition-all duration-1000 ease-out ${
           scrollPosition > 100 ? 'opacity-0 scale-75 translate-y-[-100vh]' : 'opacity-100 scale-100 translate-y-0'
         }`}>
-          <div className='relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] mx-auto'>
+          <div className='relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] mx-auto animate-float'>
             {/* Decorative Elements */}
             <div className='absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse'></div>
             <div className='absolute -inset-4 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-full animate-spin-slow'></div>
