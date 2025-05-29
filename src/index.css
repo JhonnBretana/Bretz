@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Bakbak One';
+  src: url('./assets/font/BakbakOne-Regular.ttf') format('truetype');
+  font-weight:200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/font/Inter-Regular.ttf') format('truetype');
+  font-weight:200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Awake';
+  src: url('./assets/font/AWAKENNING Personal Use.ttf') format('truetype');
+  font-weight:200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nordin';
+  src: url('./assets/font/NordinSlabOutline-nRp9Mr.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+.bakbak-one {
+  font-family: 'Bakbak One', sans-serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.nordin {
+  font-family: 'Nordin', sans-serif;
+}
+
+.awake {
+  font-family: 'Awake', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
