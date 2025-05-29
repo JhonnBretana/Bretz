@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Picture from '../assets/Images/Picture2.png'
+import VC from '../assets/VC/Bretaña, Jhonn Michael B CV.pdf'
 
 
 export default function AboutPage() {
@@ -31,7 +32,7 @@ export default function AboutPage() {
   const experiences = [
     {
       id: 1,
-      title: 'Front End Developer',
+      title: 'Front-End Developer',
       period: '2023 - Present',
       description: 'Developing and maintaining web applications using HTML, CSS, Tailwind CSS, React.js and JavaScript.',
       details: [
@@ -65,6 +66,30 @@ export default function AboutPage() {
             </div>
             <h1 className='mt-6 text-4xl font-bold text-gray-900'>Jhonn Michael Bretaña</h1>
             <p className='mt-2 text-xl text-gray-600'>Aspiring Web Developer</p>
+            {/* CTA Buttons */}
+            <div className='flex flex-col md:flex-row justify-center items-center gap-6 mt-8 animate-fadeIn delay-500'>
+              <button
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = VC;
+                  link.download = 'Bretaña, Jhonn Michael B CV';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+                className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+              >
+                <span className="relative z-10">Download VC</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+              </button>
+              <a
+                href="#contact"
+                className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+              >
+                <span className="relative z-10 group-hover:text-white">Contact Me</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -100,7 +125,7 @@ export default function AboutPage() {
               </h2>
               <div className='space-y-4'>
                 <div className='bg-gray-50 rounded-lg p-4'>
-                  <h3 className='font-medium text-gray-800 mb-2'>Frontend Development</h3>
+                  <h3 className='font-medium text-gray-800 mb-2'>Front-End Development</h3>
                   <div className='flex flex-wrap gap-2'>
                     {[
                       'HTML5',

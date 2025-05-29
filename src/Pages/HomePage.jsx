@@ -34,15 +34,15 @@ export default function HomePage() {
   return (
     <main className='min-h-screen bg-gradient-to-b from-white to-gray-50 text-center relative px-4 md:px-10 overflow-hidden'>
       {/* Hero Section */}
-      <div className='flex flex-col md:flex-row justify-between items-center relative min-h-[90vh] pt-20'>
+      <div className='flex flex-col md:flex-row justify-between items-center relative min-h-[80vh] pt-20'>
         {/* Text Content */}
         <div className='space-y-6 z-10 md:w-1/2 text-left'>
           <h3 className='text-xl font-semibold text-gray-600 animate-fadeIn'>Hello, I'm</h3>
-          <h1 className='text-6xl md:text-8xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent animate-slideUp'>
-            Jhonn Michael Bretana
+          <h1 className='text-6xl md:text-6xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent animate-slideUp'>
+            Jhonn Michael Bretaña
           </h1>
-          <h2 className='text-4xl md:text-6xl  text-gray-800 animate-slideUp delay-200'>
-            Aspring Web Developer
+          <h2 className='text-4xl md:text-4xl text-gray-800 animate-slideUp delay-200'>
+            Aspring Front-End Web Developer
           </h2>
           <p className='text-lg text-gray-600 max-w-2xl animate-fadeIn delay-300'>
             A passionate third-year student dedicated to creating beautiful and functional web experiences
@@ -72,24 +72,6 @@ export default function HomePage() {
             <div className='absolute -bottom-4 -left-4 w-20 h-20 bg-blue-400/20 rounded-full blur-xl animate-float-delayed'></div>
           </div>
         </div>
-      </div>
-      
-      {/* CTA Buttons */}
-      <div className='flex flex-col md:flex-row justify-center items-center gap-6 mt-10 mb-20 animate-fadeIn delay-500'>
-        <button
-          onClick={downloadVC}
-          className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
-        >
-          <span className="relative z-10">Download VC</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-        </button>
-        <a
-          href="#contact"
-          className="group relative flex justify-center w-48 items-center border-2 border-black px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
-        >
-          <span className="relative z-10 group-hover:text-white">Contact Me</span>
-          <div className="absolute inset-0 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-        </a>
       </div>
     </main>
   )
