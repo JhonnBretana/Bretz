@@ -67,11 +67,10 @@ function Header() {
   return (
     // Header container with dynamic background and shadow
     <header
-      className={`w-full fixed top-0 left-0 z-50 transition-all duration-500 ${
-        hasShadow 
-          ? 'bg-white/90 backdrop-blur-lg shadow-lg py-3' 
-          : 'bg-transparent py-5'
-      }`}
+      className={`w-full fixed top-0 left-0 z-50 transition-all duration-500
+        bg-white/90 backdrop-blur-lg shadow-lg py-3
+        md:${hasShadow ? 'bg-white/90 backdrop-blur-lg shadow-lg py-3' : 'bg-transparent py-5'}
+      `}
     >
       <nav className="container mx-auto px-6">
         <div className="flex justify-between items-center">
