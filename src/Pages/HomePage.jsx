@@ -41,7 +41,7 @@ export default function HomePage() {
           <h1 className='text-6xl md:text-8xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent animate-slideUp'>
             Jhonn Michael Bretana
           </h1>
-          <h2 className='text-4xl md:text-6xl font-bold text-gray-800 animate-slideUp delay-200'>
+          <h2 className='text-4xl md:text-6xl  text-gray-800 animate-slideUp delay-200'>
             Aspring Web Developer
           </h2>
           <p className='text-lg text-gray-600 max-w-2xl animate-fadeIn delay-300'>
