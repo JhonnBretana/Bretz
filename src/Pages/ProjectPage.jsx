@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
+
+
+
 const projects = [
   {
     id: 1,
     title: "ThreeWanCuties Website",
     description: "A modern e-commerce platform for a fashion brand, featuring product catalog, shopping cart, and secure payment integration. Built with responsive design for optimal viewing across all devices.",
-    image: "/src/assets/Images/Proj.png",
+    image: "/src/assets/Images/Proj2.png",
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -15,7 +18,7 @@ const projects = [
     id: 2,
     title: "BP Apparel Website",
     description: "A dynamic clothing brand website showcasing seasonal collections, size guides, and customer reviews. Includes an interactive product gallery and real-time inventory management.",
-    image: "/src/assets/Images/Proj2.png",
+    image: "/assets/Images/Proj2.png",
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -41,6 +44,36 @@ const projects = [
     githubLink: "#",
     category: "app"
   },
+  {
+    id: 5,
+    title: "ASWANG Desktop Gamee",
+    description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
+    image: "/src/assets/Images/Proj4.png",
+    technologies: [],
+    liveLink: "#",
+    githubLink: "#",
+    category: "app"
+  },
+  {
+    id: 6,
+    title: "PC-Builders Desktop Game",
+    description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
+    image: "/src/assets/Images/Proj4.png",
+    technologies: [],
+    liveLink: "#",
+    githubLink: "#",
+    category: "app"
+  } ,
+  {
+    id: 7,
+    title: "TomYang Enrollment System",
+    description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
+    image: "/src/assets/Images/Proj4.png",
+    technologies: [],
+    liveLink: "#",
+    githubLink: "#",
+    category: "web"
+  }
 ];
 
 export default function ProjectPage() {

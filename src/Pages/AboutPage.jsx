@@ -34,12 +34,20 @@ export default function AboutPage() {
       id: 1,
       title: 'Front-End Developer',
       period: '2023 - Present',
-      description: 'Developing and maintaining web applications using HTML, CSS, Tailwind CSS, React.js and JavaScript.',
+      description: ' Designed and developed responsive websites using HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, ReactJS and PHP',
       details: [
         'Building responsive and interactive user interfaces',
         'Implementing modern web design principles',
         'Working with React.js for dynamic web applications',
         'Creating clean and maintainable code'
+      ]
+    },{
+      id: 2,
+      title: 'IT Support - Apprenticeship',
+      period: '2024',
+      description: ' Gained hands-on experience in technical support, efficiently organized digital and physical records, and improved technical documentation and report writing skills.',
+      details: [
+        ''
       ]
     },
     
