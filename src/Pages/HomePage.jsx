@@ -42,7 +42,7 @@ export default function HomePage() {
             Jhonn Michael Bretana
           </h1>
           <h2 className='text-4xl md:text-6xl font-bold text-gray-800 animate-slideUp delay-200'>
-            Future Web Developer
+            Aspring Web Developer
           </h2>
           <p className='text-lg text-gray-600 max-w-2xl animate-fadeIn delay-300'>
             A passionate third-year student dedicated to creating beautiful and functional web experiences
