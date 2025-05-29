@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+
 export default function AboutPage() {
   const [expandedItems, setExpandedItems] = useState({});
   const [isVisible, setIsVisible] = useState(false);

@@ -53,7 +53,7 @@ export default function HomePage() {
         <div className={`relative md:w-1/2 mt-10 md:mt-0 transition-all duration-1000 ease-out ${
           scrollPosition > 100 ? 'opacity-0 scale-75 translate-y-[-100vh]' : 'opacity-100 scale-100 translate-y-0'
         }`}>
-          <div className='relative w-[400px] h-[400px] mx-auto'>
+          <div className='relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] mx-auto'>
             {/* Decorative Elements */}
             <div className='absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse'></div>
             <div className='absolute -inset-4 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-full animate-spin-slow'></div>
