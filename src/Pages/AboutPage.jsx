@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Picture from '../assets/Images/Picture2.png'
 
 
 export default function AboutPage() {
@@ -57,7 +58,7 @@ export default function AboutPage() {
           >
             <div className='relative inline-block'>
               <img 
-                src="/src/assets/Images/Picture2.png" 
+                src={Picture}
                 alt="Profile" 
                 className='w-48 h-48 rounded-full object-cover border-4 border-white shadow-xl'
               />
