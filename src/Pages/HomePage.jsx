@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Shared/Header'
 import Picture from '../assets/Images/Picture2.png'
+import VC from '../assets/VC/Bretaña, Jhonn Michael B CV.pdf'  // Import your VC file
 
 export default function HomePage() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -14,6 +15,21 @@ export default function HomePage() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const downloadVC = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    // Use the imported VC file
+    link.href = VC;
+    // Set the download attribute
+    link.download = 'Bretaña, Jhonn Michael B CV';
+    // Append to the document
+    document.body.appendChild(link);
+    // Trigger the download
+    link.click();
+    // Clean up
+    document.body.removeChild(link);
+  };
 
   return (
     <main className='min-h-screen bg-gradient-to-b from-white to-gray-50 text-center relative px-4 md:px-10 overflow-hidden'>
@@ -60,13 +76,13 @@ export default function HomePage() {
       
       {/* CTA Buttons */}
       <div className='flex flex-col md:flex-row justify-center items-center gap-6 mt-10 mb-20 animate-fadeIn delay-500'>
-        <a
-          href="#portfolio"
+        <button
+          onClick={downloadVC}
           className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
         >
-          <span className="relative z-10">View Portfolio</span>
+          <span className="relative z-10">Download VC</span>
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-        </a>
+        </button>
         <a
           href="#contact"
           className="group relative flex justify-center w-48 items-center border-2 border-black px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
