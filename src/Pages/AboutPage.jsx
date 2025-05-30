@@ -87,11 +87,13 @@ export default function AboutPage() {
                 }}
                 className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
               >
-                <span className="relative z-10">Download VC</span>
+                <span className="relative z-10">Download CV</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </button>
               <a
-                href="#contact"
+                href="https://www.facebook.com/bretana.04/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
               >
                 <span className="relative z-10 group-hover:text-white">Contact Me</span>
