@@ -33,7 +33,7 @@ function WebPage() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              <h2 className="text-2xl font-bold bg-gradient-to-r text-center from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 BretzPort
               </h2>
               <p className="text-gray-400 mt-2">Building digital experiences</p>
