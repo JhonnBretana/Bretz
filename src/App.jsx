@@ -15,12 +15,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<WebPage/>} />
-        
-      
-      
-      
-      
-      
+
       </Routes>
         
      
