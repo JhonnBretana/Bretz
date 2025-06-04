@@ -3,15 +3,30 @@ import React from 'react';
 const skills = [
   {
     category: "Programming Languages",
-    items: ["JavaScript", "HTML", "CSS", ]
+    items: [
+      { name: "JavaScript", level: 60 },
+      { name: "Java", level: 50 },
+      { name: "C#", level: 55 }
+    ]
   },
   {
     category: "Frameworks & Libraries",
-    items: ["React", "React Native", "Tailwind CSS", "Bootstrap"]
+    items: [
+      { name: "React", level: 80 },
+      { name: "React Native", level: 20 },
+      { name: "Tailwind CSS", level: 90 },
+      { name: "Bootstrap", level: 85 }
+    ]
   },
   {
     category: "Tools & Technologies",
-    items: ["Git", "GitHub", "VS Code", "Figma"]
+    items: [
+      { name: "Git", level: 100 },
+      { name: "GitHub", level: 100 },
+      { name: "VS Code", level: 100 },
+      { name: "Figma", level: 85 },
+      { name: "Bitbucket", level:60 }
+    ]
   }
 ];
 
@@ -38,7 +53,7 @@ export default function Others() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Skills & Interests</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">Skills & Interests</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A comprehensive overview of my technical skills, certifications, and professional interests.
           </p>
@@ -46,19 +61,25 @@ export default function Others() {
 
         {/* Skills Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Technical Skills</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Technical Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {skills.map((skillGroup) => (
-              <div key={skillGroup.category} className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{skillGroup.category}</h3>
-                <div className="flex flex-wrap gap-2">
+              <div key={skillGroup.category} className="bg-white rounded-2xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6">{skillGroup.category}</h3>
+                <div className="space-y-6">
                   {skillGroup.items.map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 transition-colors"
-                    >
-                      {skill}
-                    </span>
+                    <div key={skill.name} className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-700 font-medium">{skill.name}</span>
+                        <span className="text-sm font-semibold text-gray-500">{skill.level}%</span>
+                      </div>
+                      <div className="w-full bg-gray-100 rounded-full h-2.5">
+                        <div 
+                          className="h-2.5 rounded-full bg-gradient-to-r from-green-500 to-green-600 transition-all duration-1000 ease-out"
+                          style={{ width: `${skill.level}%` }}
+                        />
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>

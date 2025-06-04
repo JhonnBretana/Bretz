@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Picture from '../assets/Images/Picture2.png'
-import VC from '../assets/VC/Bretaña, Jhonn Michael B CV.pdf'
+import VC from '../assets/VC/Bretana, Jhonn Michael B - Resume.pdf'
 
 
 export default function AboutPage() {

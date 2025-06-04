@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-
-
-
+import Proj1 from '../assets/Images/Proj1.png'
+import Proj2 from '../assets/Images/Proj2.png'
+import Proj3 from '../assets/Images/Proj3.png'
+import Proj4 from '../assets/Images/Proj4.png'
+import Proj5 from '../assets/Images/Proj5.png'
+import Proj6 from '../assets/Images/Proj6.png'
+import Proj7 from '../assets/Images/Proj7.png'
 
 const projects = [
   {
     id: 1,
     title: "ThreeWanCuties Website",
     description: "A modern e-commerce platform for a fashion brand, featuring product catalog, shopping cart, and secure payment integration. Built with responsive design for optimal viewing across all devices.",
-    image: "/src/assets/Images/Proj2.png",
+    image: Proj1,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -18,7 +22,7 @@ const projects = [
     id: 2,
     title: "BP Apparel Website",
     description: "A dynamic clothing brand website showcasing seasonal collections, size guides, and customer reviews. Includes an interactive product gallery and real-time inventory management.",
-    image: "/assets/Images/Proj2.png",
+    image: Proj2,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -28,7 +32,7 @@ const projects = [
     id: 3,
     title: "bRAEnQUEST E-learning App",
     description: "An interactive educational platform offering personalized learning paths, progress tracking, and gamified learning experiences. Features include video lessons, quizzes, and achievement systems.",
-    image: "/src/assets/Images/Proj3.png",
+    image: Proj3,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -38,7 +42,7 @@ const projects = [
     id: 4,
     title: "ALGEBRUN Mobile Game",
     description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
-    image: "/src/assets/Images/Proj4.png",
+    image: Proj4,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -48,7 +52,7 @@ const projects = [
     id: 5,
     title: "ASWANG Desktop Gamee",
     description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
-    image: "/src/assets/Images/Proj4.png",
+    image: Proj5,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -58,7 +62,7 @@ const projects = [
     id: 6,
     title: "PC-Builders Desktop Game",
     description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
-    image: "/src/assets/Images/Proj4.png",
+    image: Proj6,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -68,7 +72,7 @@ const projects = [
     id: 7,
     title: "TomYang Enrollment System",
     description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
-    image: "/src/assets/Images/Proj4.png",
+    image: Proj7,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
@@ -162,6 +166,7 @@ export default function ProjectPage() {
         </div>
 
         {/* Call to Action */}
+        {/*
         <div className="text-center mt-16">
           <p className="text-gray-600 mb-4">Want to see more of my work?</p>
           <a
@@ -176,6 +181,7 @@ export default function ProjectPage() {
             View More on GitHub
           </a>
         </div>
+        */}
       </div>
     </div>
   );
