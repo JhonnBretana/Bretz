@@ -15,7 +15,7 @@ const projects = [
     image: Proj1,
     technologies: [],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://threewancuties.com/?fbclid=IwY2xjawKxPtBleHRuA2FlbQIxMQABHsK2Je7wssqm_P0UnrEg6KoevDRnjkuUXlvg2ff44V9ozhFB9VCFbtTO2m-s_aem_8f5_CK_cEhbvd7C1dnHx_w",
     category: "web"
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     image: Proj2,
     technologies: [],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://kurtpantaleon.github.io/BP-Website/",
     category: "web"
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     image: Proj3,
     technologies: [],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://kurtpantaleon.github.io/AlgebraQuest-Website/",
     category: "app"
   },
   {
@@ -45,23 +45,23 @@ const projects = [
     image: Proj4,
     technologies: [],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://drive.google.com/drive/u/2/folders/1qxvP8_Bi3olf-n_zaTy0eYN9dFT-iLHE",
     category: "app"
   },
   {
     id: 5,
     title: "ASWANG Desktop Gamee",
-    description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
+    description: "This is a top-down horror survival game created as a student project. It uses one-button controls to keep gameplay simple but intense. Players face endless zombie waves that get harder over time. The goal is to survive as long as possible, with your score rising the longer you last. It's a fun and challenging game made to test reflexes, strategy, and timing.",
     image: Proj5,
     technologies: [],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/kurtpantaleon/OneButtonGame",
     category: "app"
   },
   {
     id: 6,
     title: "PC-Builders Desktop Game",
-    description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
+    description: "A multiplayer tabletop-inspired card game where players race to build a complete PC using component cards based on a given checklist. Each player must collect CPU, GPU, RAM, and more—but watch out! Sabotage cards can slow down your enemies by corrupting their parts or stealing pieces. Strategy, speed, and a bit of luck will determine who becomes the ultimate PC builder.",
     image: Proj6,
     technologies: [],
     liveLink: "#",
@@ -71,7 +71,7 @@ const projects = [
   {
     id: 7,
     title: "TomYang Enrollment System",
-    description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
+    description: "A student-developed enrollment system designed for Tom Yang University. This system allows both students and administrators to log in securely, manage course enrollment, and update records. Features include user authentication, student registration, course listing, and admin-level controls. Built to streamline the enrollment process and make academic data management more efficient.",
     image: Proj7,
     technologies: [],
     liveLink: "#",
@@ -122,7 +122,7 @@ export default function ProjectPage() {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col"
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -145,12 +145,12 @@ export default function ProjectPage() {
               </div>
 
               {/* Project Info */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
                 
                 {/* Technologies */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -159,6 +159,21 @@ export default function ProjectPage() {
                       {tech}
                     </span>
                   ))}
+                </div>
+
+                {/* View Button */}
+                <div className="mt-auto">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-full px-4 py-2.5 text-sm font-semibold text-white bg-black rounded-lg hover:bg-gray-800 transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    View Project
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
