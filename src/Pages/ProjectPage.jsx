@@ -76,7 +76,7 @@ const projects = [
     image: Proj7,
     technologies: [],
     liveLink: "#",
-    githubLink: "https://jhonnbretana.github.io/eCom/",
+    githubLink: "#",
     category: "web"
   } ,
   {
@@ -85,7 +85,7 @@ const projects = [
     description: "DocHerbal is a personal project focused on promoting natural wellness through herbal remedies. This website showcases plant-based solutions designed to support health, balance, and immunity—crafted with care, inspired by nature, and built as a modern web experience.",
     image: Proj8,
     technologies: [],
-    liveLink: "#",
+    liveLink: "https://jhonnbretana.github.io/eCom/",
     githubLink: "",
     category: "web"
   }
