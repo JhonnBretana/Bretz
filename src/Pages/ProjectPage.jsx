@@ -6,6 +6,7 @@ import Proj4 from '../assets/Images/Proj4.png'
 import Proj5 from '../assets/Images/Proj5.png'
 import Proj6 from '../assets/Images/Proj6.png'
 import Proj7 from '../assets/Images/Proj7.png'
+import Proj8 from '../assets/Images/Proj8.png'
 
 const projects = [
   {
@@ -71,11 +72,21 @@ const projects = [
   {
     id: 7,
     title: "TomYang Enrollment System",
-    description: "A student-developed enrollment system designed for Tom Yang University. This system allows both students and administrators to log in securely, manage course enrollment, and update records. Features include user authentication, student registration, course listing, and admin-level controls. Built to streamline the enrollment process and make academic data management more efficient.",
+    description: "An enrollment system designed for Tom Yang University. This system allows both students and administrators to log in securely, manage course enrollment, and update records. Features include user authentication, student registration, course listing, and admin-level controls. Built to streamline the enrollment process and make academic data management more efficient.",
     image: Proj7,
     technologies: [],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://jhonnbretana.github.io/eCom/",
+    category: "web"
+  } ,
+  {
+    id: 8,
+    title: "DocHerbal Website",
+    description: "DocHerbal is a personal project focused on promoting natural wellness through herbal remedies. This website showcases plant-based solutions designed to support health, balance, and immunity—crafted with care, inspired by nature, and built as a modern web experience.",
+    image: Proj8,
+    technologies: [],
+    liveLink: "#",
+    githubLink: "",
     category: "web"
   }
 ];
