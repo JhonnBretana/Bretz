@@ -1,103 +1,150 @@
-import React, { useState } from 'react';
-import Proj1 from '../assets/Images/Proj1.png'
-import Proj2 from '../assets/Images/Proj2.png'
-import Proj3 from '../assets/Images/Proj3.png'
-import Proj4 from '../assets/Images/Proj4.png'
-import Proj5 from '../assets/Images/Proj5.png'
-import Proj6 from '../assets/Images/Proj6.png'
-import Proj7 from '../assets/Images/Proj7.png'
-import Proj8 from '../assets/Images/Proj8.png'
+import React, { useState } from "react";
+import Proj1 from "../assets/Images/Proj1.png";
+import Proj2 from "../assets/Images/Proj2.png";
+import Proj3 from "../assets/Images/Proj3.png";
+import Proj4 from "../assets/Images/Proj4.png";
+import Proj5 from "../assets/Images/Proj5.png";
+import Proj6 from "../assets/Images/Proj6.png";
+import Proj7 from "../assets/Images/Proj7.png";
+import Proj8 from "../assets/Images/Proj8.png";
+import Proj9 from "../assets/Images/Proj9.png";
+import Proj10 from "../assets/Images/Proj10.jpg";
+import Proj11 from "../assets/Images/Proj11.jpg";
 
 const projects = [
   {
     id: 1,
     title: "ThreeWanCuties Website",
-    description: "A modern e-commerce platform for a fashion brand, featuring product catalog, shopping cart, and secure payment integration. Built with responsive design for optimal viewing across all devices.",
+    description:
+      "A modern e-commerce platform for a fashion brand, featuring product catalog, shopping cart, and secure payment integration. Built with responsive design for optimal viewing across all devices.",
     image: Proj1,
     technologies: [],
     liveLink: "#",
-    githubLink: "https://threewancuties.com/?fbclid=IwY2xjawKxPtBleHRuA2FlbQIxMQABHsK2Je7wssqm_P0UnrEg6KoevDRnjkuUXlvg2ff44V9ozhFB9VCFbtTO2m-s_aem_8f5_CK_cEhbvd7C1dnHx_w",
-    category: "web"
+    githubLink:
+      "https://threewancuties.com/?fbclid=IwY2xjawKxPtBleHRuA2FlbQIxMQABHsK2Je7wssqm_P0UnrEg6KoevDRnjkuUXlvg2ff44V9ozhFB9VCFbtTO2m-s_aem_8f5_CK_cEhbvd7C1dnHx_w",
+    category: "web",
   },
   {
     id: 2,
     title: "BP Apparel Website",
-    description: "A dynamic clothing brand website showcasing seasonal collections, size guides, and customer reviews. Includes an interactive product gallery and real-time inventory management.",
+    description:
+      "A dynamic clothing brand website showcasing seasonal collections, size guides, and customer reviews. Includes an interactive product gallery and real-time inventory management.",
     image: Proj2,
     technologies: [],
     liveLink: "#",
     githubLink: "https://kurtpantaleon.github.io/BP-Website/",
-    category: "web"
+    category: "web",
   },
   {
     id: 3,
     title: "bRAEnQUEST E-learning App",
-    description: "An interactive educational platform offering personalized learning paths, progress tracking, and gamified learning experiences. Features include video lessons, quizzes, and achievement systems.",
+    description:
+      "An interactive educational platform offering personalized learning paths, progress tracking, and gamified learning experiences. Features include video lessons, quizzes, and achievement systems.",
     image: Proj3,
     technologies: [],
     liveLink: "#",
     githubLink: "https://kurtpantaleon.github.io/AlgebraQuest-Website/",
-    category: "app"
+    category: "app",
   },
   {
     id: 4,
     title: "ALGEBRUN Mobile Game",
-    description: "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
+    description:
+      "An educational math game that combines algebra problem-solving with endless runner mechanics. Features include multiple difficulty levels, power-ups, and global leaderboards.",
     image: Proj4,
     technologies: [],
     liveLink: "#",
-    githubLink: "https://drive.google.com/drive/u/2/folders/1qxvP8_Bi3olf-n_zaTy0eYN9dFT-iLHE",
-    category: "app"
+    githubLink:
+      "https://drive.google.com/drive/u/2/folders/1qxvP8_Bi3olf-n_zaTy0eYN9dFT-iLHE",
+    category: "app",
   },
   {
     id: 5,
     title: "ASWANG Desktop Gamee",
-    description: "This is a top-down horror survival game created as a student project. It uses one-button controls to keep gameplay simple but intense. Players face endless zombie waves that get harder over time. The goal is to survive as long as possible, with your score rising the longer you last. It's a fun and challenging game made to test reflexes, strategy, and timing.",
+    description:
+      "This is a top-down horror survival game created as a student project. It uses one-button controls to keep gameplay simple but intense. Players face endless zombie waves that get harder over time. The goal is to survive as long as possible, with your score rising the longer you last. It's a fun and challenging game made to test reflexes, strategy, and timing.",
     image: Proj5,
     technologies: [],
     liveLink: "#",
     githubLink: "https://github.com/kurtpantaleon/OneButtonGame",
-    category: "app"
+    category: "app",
   },
   {
     id: 6,
     title: "PC-Builders Desktop Game",
-    description: "A multiplayer tabletop-inspired card game where players race to build a complete PC using component cards based on a given checklist. Each player must collect CPU, GPU, RAM, and more—but watch out! Sabotage cards can slow down your enemies by corrupting their parts or stealing pieces. Strategy, speed, and a bit of luck will determine who becomes the ultimate PC builder.",
+    description:
+      "A multiplayer tabletop-inspired card game where players race to build a complete PC using component cards based on a given checklist. Each player must collect CPU, GPU, RAM, and more—but watch out! Sabotage cards can slow down your enemies by corrupting their parts or stealing pieces. Strategy, speed, and a bit of luck will determine who becomes the ultimate PC builder.",
     image: Proj6,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
-    category: "app"
-  } ,
+    category: "app",
+  },
   {
     id: 7,
     title: "TomYang Enrollment System",
-    description: "An enrollment system designed for Tom Yang University. This system allows both students and administrators to log in securely, manage course enrollment, and update records. Features include user authentication, student registration, course listing, and admin-level controls. Built to streamline the enrollment process and make academic data management more efficient.",
+    description:
+      "An enrollment system designed for Tom Yang University. This system allows both students and administrators to log in securely, manage course enrollment, and update records. Features include user authentication, student registration, course listing, and admin-level controls. Built to streamline the enrollment process and make academic data management more efficient.",
     image: Proj7,
     technologies: [],
     liveLink: "#",
     githubLink: "#",
-    category: "web"
-  } ,
+    category: "web",
+  },
   {
     id: 8,
     title: "DocHerbal Website",
-    description: "DocHerbal is a personal project focused on promoting natural wellness through herbal remedies. This website showcases plant-based solutions designed to support health, balance, and immunity—crafted with care, inspired by nature, and built as a modern web experience.",
+    description:
+      "DocHerbal is a personal project focused on promoting natural wellness through herbal remedies. This website showcases plant-based solutions designed to support health, balance, and immunity—crafted with care, inspired by nature, and built as a modern web experience.",
     image: Proj8,
     technologies: [],
-    liveLink: "https://jhonnbretana.github.io/eCom/",
-    githubLink: "",
-    category: "web"
-  }
+    liveLink: "",
+    githubLink: "https://jhonnbretana.github.io/eCom/",
+    category: "web",
+  },
+  {
+    id: 9,
+    title: "Paraboland",
+    description:
+      "A top-down math adventure game developed in Unity, inspired by the exploration style of Pokémon. Players explore a village and nearby areas, completing quests and interacting with NPCs. One of the core mechanics allows players to enter houses to heal sick characters by answering math problems, turning learning into engaging gameplay. The game blends classic RPG movement and world exploration with educational challenges designed to improve the player’s problem-solving skills while progressing through the story.",
+    image: Proj9,
+    technologies: [],
+    liveLink: "",
+    githubLink: "https://kurtpantaleon.github.io/Paraboland-Website",
+    category: "app",
+  },
+  {
+    id: 10,
+    title: "LinGo",
+    description:
+      "A web app similar to Duolingo, designed for Cebuano learners. It features various challenges and exercises that help users improve their Cebuano language skills through an interactive and engaging learning experience.",
+    image: Proj10,
+    technologies: [],
+    liveLink: "",
+    githubLink: "https://linggo-a057a.web.app/",
+    category: "web",
+  },
+  {
+    id: 11,
+    title: "Structify",
+    description:
+            "A gamified interactive web application that teaches data structures and algorithms, specifically designed for 2nd year BSIT students. Features engaging visualizations, interactive challenges, and curriculum-aligned content to make learning DSA fun and effective.",
+    image: Proj11,
+    technologies: [],
+    liveLink: "",
+    githubLink: "https://structify.studio",
+    category: "web",
+  },
 ];
 
 export default function ProjectPage() {
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState("all");
   const [hoveredProject, setHoveredProject] = useState(null);
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+  const filteredProjects =
+    activeFilter === "all"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <div className="min-h-screen bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
@@ -106,21 +153,22 @@ export default function ProjectPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">My Projects</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A collection of my recent work and personal projects. Each project is a unique challenge
-            that helped me grow as a developer.
+            A collection of my recent work and personal projects. Each project
+            is a unique challenge that helped me grow as a developer.
           </p>
         </div>
 
         {/* Filter Buttons */}
         <div className="flex justify-center space-x-4 mb-12">
-          {['all', 'web', 'app'].map((filter) => (
+          {["all", "web", "app"].map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300
-                ${activeFilter === filter
-                  ? 'bg-black text-white'
-                  : 'bg-white text-gray-600 hover:bg-gray-100'
+                ${
+                  activeFilter === filter
+                    ? "bg-black text-white"
+                    : "bg-white text-gray-600 hover:bg-gray-100"
                 }`}
             >
               {filter.charAt(0).toUpperCase() + filter.slice(1)}
@@ -144,22 +192,28 @@ export default function ProjectPage() {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300"
                   style={{
-                    transform: hoveredProject === project.id ? 'scale(1.1)' : 'scale(1)'
+                    transform:
+                      hoveredProject === project.id ? "scale(1.1)" : "scale(1)",
                   }}
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300"
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300"
                   style={{
-                    opacity: hoveredProject === project.id ? 1 : 0
+                    opacity: hoveredProject === project.id ? 1 : 0,
                   }}
                 />
               </div>
 
               {/* Project Info */}
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
-                
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 mb-4 line-clamp-3">
+                  {project.description}
+                </p>
+
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
@@ -181,8 +235,18 @@ export default function ProjectPage() {
                     className="inline-flex items-center justify-center w-full px-4 py-2.5 text-sm font-semibold text-white bg-black rounded-lg hover:bg-gray-800 transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[0.98]"
                   >
                     View Project
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <svg
+                      className="w-4 h-4 ml-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -212,4 +276,3 @@ export default function ProjectPage() {
     </div>
   );
 }
-

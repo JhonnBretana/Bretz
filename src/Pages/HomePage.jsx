@@ -64,13 +64,13 @@ export default function HomePage() {
               <span className={`border-r-2 border-purple-400 ml-1 ${typedName.length === nameChars.length ? 'animate-pulse' : ''}`}></span>
             </h1>
             <h2 className='text-4xl md:text-5xl text-gray-800 animate-slideUp delay-200 font-medium'>
-              Aspiring Front-End Web Developer
+              A Junior Software Web Developer
             </h2>
           </div>
           
           <p className='text-xl text-gray-600 max-w-2xl animate-fadeIn delay-300 leading-relaxed'>
-            A passionate third-year student dedicated to creating beautiful and functional web experiences
-          </p>
+            A passionate Fourth-year student dedicated to creating beautiful and functional web experiences
+          </p>+
 
           
         </div>
