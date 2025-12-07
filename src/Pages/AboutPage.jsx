@@ -69,8 +69,8 @@ export default function AboutPage() {
     },
     {
       id: 4,
-      title: "Front-End Developer",
-      period: "2023 - Present",
+      title: "Free-Lance Developer",
+      period: "2023",
       description:
         " Designed and developed responsive websites using HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, ReactJS and PHP",
       details: [

@@ -70,7 +70,7 @@ export default function HomePage() {
           
           <p className='text-xl text-gray-600 max-w-2xl animate-fadeIn delay-300 leading-relaxed'>
             A passionate Fourth-year student dedicated to creating beautiful and functional web experiences
-          </p>+
+          </p>
 
           
         </div>

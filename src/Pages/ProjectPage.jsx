@@ -16,7 +16,7 @@ const projects = [
     id: 1,
     title: "ThreeWanCuties Website",
     description:
-      "A modern e-commerce platform for a fashion brand, featuring product catalog, shopping cart, and secure payment integration. Built with responsive design for optimal viewing across all devices.",
+     "A web app for our section to manage and showcase our projects, events, and team members. It features a modern design, responsive layout, and interactive elements to engage visitors.",
     image: Proj1,
     technologies: [],
     liveLink: "#",
