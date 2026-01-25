@@ -4,6 +4,7 @@ import HomePage from '../Pages/HomePage';
 import AboutPage from '../Pages/AboutPage';
 import ProjectPage from '../Pages/ProjectPage';
 import Others from '../Pages/Others';
+import Intership from '../Pages/Intership';
 
 function WebPage() {
   return (
@@ -25,6 +26,10 @@ function WebPage() {
 
         <section id="others" className="min-h-screen bg-white">
           <Others />
+        </section>
+
+         <section id="internship" className="min-h-screen bg-white">
+          <Intership />
         </section>
       </main>
 

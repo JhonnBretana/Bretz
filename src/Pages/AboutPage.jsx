@@ -51,8 +51,7 @@ export default function AboutPage() {
       details: [
         "Implemented responsive UI components using React and Bootstrap CSS",
         "Collaborated in Agile sprints and code reviews",
-        "Wrote unit/integration tests and fixed bugs"
-  
+        "Wrote unit/integration tests and fixed bugs",
       ],
     },
     {
@@ -83,8 +82,8 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 py-12 px-4 sm:px-6 lg:px-8 font-montserrat">
+      <div className="max-w-5xl mx-auto font-montserrat">
         {/* Profile Section with Scroll Animation */}
         <div className="text-center mb-16">
           <div
@@ -101,10 +100,12 @@ export default function AboutPage() {
                 className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-xl"
               />
             </div>
-            <h1 className="mt-6 text-4xl font-bold text-gray-900">
+            <h1 className="mt-6 text-4xl font-bold text-gray-900 font-montserrat">
               Jhonn Michael Bretaña
             </h1>
-            <p className="mt-2 text-xl text-gray-600">Aspiring Web Developer</p>
+            <p className="mt-2 text-xl text-gray-600 font-montserrat">
+              Aspiring Web Developer
+            </p>
             {/* CTA Buttons */}
             <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-8 animate-fadeIn delay-500">
               <button
@@ -116,28 +117,30 @@ export default function AboutPage() {
                   link.click();
                   document.body.removeChild(link);
                 }}
-                className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+                className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 focus:outline-none"
               >
-                <span className="relative z-10">Download CV</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <span className="relative z-10 group-hover:text-black">
+                  Download CV
+                </span>
+                <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </button>
               <a
                 href="https://www.facebook.com/bretana.04/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+                className="group relative flex justify-center w-48 items-center bg-black text-white px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 focus:outline-none"
               >
-                <span className="relative z-10 group-hover:text-white">
+                <span className="relative z-10 group-hover:text-black">
                   Contact Me
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </a>
             </div>
           </div>
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-montserrat">
           {/* Introduction Card */}
           <div
             className={`transform transition-all duration-1000 ease-out ${
@@ -146,8 +149,8 @@ export default function AboutPage() {
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <div className="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+            <div className="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300 font-montserrat">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center font-montserrat">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-2 text-blue-500"
@@ -164,7 +167,7 @@ export default function AboutPage() {
                 </svg>
                 Introduction
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed font-montserrat">
                 Freelance Front-End Web Developer and current Information
                 Technology student at Pamantasan ng Lungsod ng Valenzuela,
                 Philippines. I specialize in creating responsive, user-friendly
@@ -184,8 +187,8 @@ export default function AboutPage() {
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <div className="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+            <div className="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300 font-montserrat">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center font-montserrat">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-2 text-blue-500"
@@ -203,8 +206,8 @@ export default function AboutPage() {
                 Skills
               </h2>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="font-medium text-gray-800 mb-2">
+                <div className="bg-gray-50 rounded-lg p-4 font-montserrat">
+                  <h3 className="font-medium text-gray-800 mb-2 font-montserrat">
                     Front-End Development
                   </h3>
                   <div className="flex flex-wrap gap-2">
@@ -226,8 +229,8 @@ export default function AboutPage() {
                     ))}
                   </div>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="font-medium text-gray-800 mb-2">
+                <div className="bg-gray-50 rounded-lg p-4 font-montserrat">
+                  <h3 className="font-medium text-gray-800 mb-2 font-montserrat">
                     Tools & Technologies
                   </h3>
                   <div className="flex flex-wrap gap-2">
@@ -239,7 +242,7 @@ export default function AboutPage() {
                         >
                           {skill}
                         </span>
-                      )
+                      ),
                     )}
                   </div>
                 </div>
@@ -256,8 +259,8 @@ export default function AboutPage() {
               : "translate-y-10 opacity-0"
           }`}
         >
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+          <div className="bg-white rounded-xl shadow-lg p-8 font-montserrat">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center font-montserrat">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 mr-2 text-blue-500"
@@ -281,16 +284,18 @@ export default function AboutPage() {
                   className="relative pl-8 border-l-4 border-blue-500 hover:border-blue-600 transition-colors"
                 >
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <div className="bg-gray-50 rounded-lg p-6">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h3 className="text-xl font-medium text-gray-800">
+                  <div className="bg-gray-50 rounded-lg p-6 font-montserrat">
+                    <div className="flex justify-between items-start font-montserrat">
+                      <div className="font-montserrat">
+                        <h3 className="text-xl font-medium text-gray-800 font-montserrat">
                           {exp.title}
                         </h3>
-                        <p className="text-blue-600 font-medium">
+                        <p className="text-blue-600 font-medium font-montserrat">
                           {exp.period}
                         </p>
-                        <p className="text-gray-600 mt-2">{exp.description}</p>
+                        <p className="text-gray-600 mt-2 font-montserrat">
+                          {exp.description}
+                        </p>
                       </div>
                       <button
                         onClick={() => toggleExpand(exp.id)}
@@ -321,10 +326,13 @@ export default function AboutPage() {
                         expandedItems[exp.id] ? "max-h-96 mt-4" : "max-h-0"
                       }`}
                     >
-                      <div className="border-t border-gray-200 pt-4 mt-4">
-                        <ul className="space-y-2">
+                      <div className="border-t border-gray-200 pt-4 mt-4 font-montserrat">
+                        <ul className="space-y-2 font-montserrat">
                           {exp.details.map((detail, index) => (
-                            <li key={index} className="flex items-start">
+                            <li
+                              key={index}
+                              className="flex items-start font-montserrat"
+                            >
                               <svg
                                 className="h-5 w-5 text-blue-500 mr-2 mt-1"
                                 fill="none"
@@ -338,7 +346,9 @@ export default function AboutPage() {
                                   d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                                 />
                               </svg>
-                              <span className="text-gray-600">{detail}</span>
+                              <span className="text-gray-600 font-montserrat">
+                                {detail}
+                              </span>
                             </li>
                           ))}
                         </ul>
