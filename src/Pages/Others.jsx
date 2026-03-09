@@ -8,7 +8,7 @@ const skills = [
   {
     category: "Programming Languages",
     items: [
-      { name: "JavaScript", level: 60 },
+      { name: "JavaScript", level: 90 },
       { name: "Java", level: 50 },
       { name: "C#", level: 55 },
     ],
@@ -20,6 +20,7 @@ const skills = [
       { name: "React Native", level: 20 },
       { name: "Tailwind CSS", level: 90 },
       { name: "Bootstrap", level: 85 },
+      { name: "Sequalize", level: 60 },
     ],
   },
   {
@@ -29,7 +30,8 @@ const skills = [
       { name: "GitHub", level: 100 },
       { name: "VS Code", level: 100 },
       { name: "Figma", level: 85 },
-      { name: "Bitbucket", level: 60 },
+      { name: "Firebase", level: 60 },
+      { name: "MySQL", level: 80 },
     ],
   },
 ];

@@ -32,7 +32,7 @@ export default function AboutPage() {
     {
       id: 1,
       title: "ELI IT Solutions - Project Based",
-      period: "October 1, 2025 - Present",
+      period: "October 1, 2025 - January 31, 2026",
       description:
         "Project-Based Junior Software Developer — contributed to building user-facing features, improved UI functionality, and supported the team in debugging, testing, and maintaining code quality",
       details: [
@@ -140,7 +140,7 @@ export default function AboutPage() {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-montserrat">
+        <div className=" font-montserrat">
           {/* Introduction Card */}
           <div
             className={`transform transition-all duration-1000 ease-out ${
@@ -168,19 +168,26 @@ export default function AboutPage() {
                 Introduction
               </h2>
               <p className="text-gray-600 leading-relaxed font-montserrat">
-                Freelance Front-End Web Developer and current Information
-                Technology student at Pamantasan ng Lungsod ng Valenzuela,
-                Philippines. I specialize in creating responsive, user-friendly
-                interfaces and have completed a variety of freelance projects
-                alongside academic and personal work. Passionate about web
-                technologies and continuously building my skills through
-                real-world experience.
+                I am a Freelance Software Developer and an Information
+                Technology student at Pamantasan ng Lungsod ng Valenzuela. I am
+                passionate about web development and enjoy building simple,
+                user-friendly interfaces. I have gained hands-on experience
+                working as a Project-Based Junior Software Developer and
+                Software Developer Intern at ELI IT Solutions, where I
+                contributed to building user-facing features, improving
+                interface functionality, and assisting in debugging and testing.
+                I also gained experience through an IT Support Apprenticeship
+                and freelance projects, where I worked on developing and
+                improving web applications. I am currently seeking an
+                opportunity as a Junior Developer where I can apply my skills,
+                continue learning, and contribute to real-world software
+                development projects
               </p>
             </div>
           </div>
 
           {/* Skills Card */}
-          <div
+          {/* <div
             className={`transform transition-all duration-1000 ease-out ${
               scrollPosition > 200
                 ? "translate-y-0 opacity-100"
@@ -218,7 +225,6 @@ export default function AboutPage() {
                       "React.js",
                       "Tailwind CSS",
                       "Bootstrap",
-                      "Responsive Design",
                     ].map((skill) => (
                       <span
                         key={skill}
@@ -234,21 +240,26 @@ export default function AboutPage() {
                     Tools & Technologies
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {["GitHub", "VS Code", "Chrome DevTools", "Figma"].map(
-                      (skill) => (
-                        <span
-                          key={skill}
-                          className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
-                        >
-                          {skill}
-                        </span>
-                      ),
-                    )}
+                    {[
+                      "GitHub",
+                      "VS Code",
+                      "Chrome DevTools",
+                      "Figma",
+                      "MySQL",
+                      "Firebase",
+                    ].map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Experience Section */}
